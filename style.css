@@ -1,0 +1,151 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(145deg, #0b101a, #0d1724);
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.background-stripes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 204, 255, 0.1) 0,
+        rgba(0, 204, 255, 0.1) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+header button:hover {
+    background-color: #555;
+}
+
+main h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.map {
+    flex: 1;
+    min-width: 290px;
+}
+
+.map-outline {
+    height: 350px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #a5fff7;
+    overflow: hidden;
+}
+
+iframe {
+    border: none;
+    border-radius: 15px;
+}
+
+.details {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.details p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.details a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo-small {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo-small img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
